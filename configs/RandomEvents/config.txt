@@ -1,0 +1,22 @@
+"RandomEvent Config"
+{
+	//Round cache config
+	//Each time an Event fires it is cached in an array, as long as the plugin is not reloaded, the plugin wont 
+	// replay an event to the server.
+	"Cache Type"	"0"
+		//Types:
+		//0 : Wont play any of the round until there are X (cache amount) left in the queue, then it will reset the cache
+		//1 : Wont play any rounds in the cache until X (cache amount) is hit, then it will remove the oldest one.
+		//2 : Same as 0, but will start removing the oldest one in the queue first.
+		
+		//Type 2: this means that the 'amount' set will be the random pick set.
+		
+	"Cache Amount"	"5" //This should differ, and if set to 0, or above the amount of events currently configured it 
+						//	will ignore the cache all together.
+	
+	//Others:
+	//Announcment text can be found in the translation files, the colors are built into the translation text.
+	"Announcement Start"		"1" // announcement of the event has started
+	"Announcement End"			"1" // announcement of the event has stopped
+	"Announcement Winner"		"1" // Future feature for sub-plugins to handle the winner of the event.
+}

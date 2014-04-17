@@ -1,0 +1,44 @@
+"RandomEvents"
+{
+	"Chances"
+	{
+		//Only modify this if you know what you're doing!
+		"5"		"5"  // Extremely Rare Chance
+		"4"		"10" // Rare Chance
+		"3"		"15" // Unusual
+		"2"		"25" // Strange
+		"1"		"45" // Unique
+		"0"		"0"  // Only happens when an RE_SetEvent happens
+		// Scale of 1-5, 5 being the least amount of times the event will happen.
+	}
+	"0"
+	{
+		"name"		"Meteor Shower"
+		"chance"	"3"
+		"plugin"	"re_meteorshower"
+		"args"		"amount=5"
+		"lasts"		"20"
+		"command_start"	""
+		"command_end"	""
+	}
+	"1"
+	{
+		"name"			"Slap All Players"
+		"chance"		"1"
+		"plugin"		""
+		"args"			""
+		"lasts"			"0"
+		"command_start"	"sm_slap @all 10"
+		"command_end"	""
+	}
+	"2"
+	{
+		"name"		"Pumpkin Shower"
+		"chance"	"2"
+		"plugin"	"re_meteorshower"
+		"args"		"type=pumpkin amount=5"
+		"lasts"		"10"
+		"command_start"	""
+		"command_end"	""
+	}
+}
